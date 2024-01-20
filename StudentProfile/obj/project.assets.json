@@ -1201,11 +1201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dot Net\\StudentProfile\\StudentProfile\\ProfilesApi.csproj",
+      "projectUniqueName": "D:\\Angular\\ProfilesApplication\\StudentProfile\\ProfilesApi.csproj",
       "projectName": "ProfilesApi",
-      "projectPath": "D:\\Dot Net\\StudentProfile\\StudentProfile\\ProfilesApi.csproj",
+      "projectPath": "D:\\Angular\\ProfilesApplication\\StudentProfile\\ProfilesApi.csproj",
       "packagesPath": "C:\\Users\\soumi\\.nuget\\packages\\",
-      "outputPath": "D:\\Dot Net\\StudentProfile\\StudentProfile\\obj\\",
+      "outputPath": "D:\\Angular\\ProfilesApplication\\StudentProfile\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\soumi\\AppData\\Roaming\\NuGet\\NuGet.Config",

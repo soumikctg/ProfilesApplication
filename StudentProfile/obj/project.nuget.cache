@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q37stP5uEGSw0X0r/VoBaDCxSWOx6fRFC+zJMhjB/LlDLEGg/xEJM14/KTWpfb98yx512QnQLYgII6Fw5F3ESA==",
+  "dgSpecHash": "wIFjtu+Ag+BC3F3I9HQCnz9WtZ1nU2Pn/QXbd13A+SzjJxXYH79GFqdHiPMeSnB9FJob/BPLJEi38GL1UR+1tw==",
   "success": true,
-  "projectFilePath": "D:\\Dot Net\\StudentProfile\\StudentProfile\\ProfilesApi.csproj",
+  "projectFilePath": "D:\\Angular\\ProfilesApplication\\StudentProfile\\ProfilesApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soumi\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\soumi\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
