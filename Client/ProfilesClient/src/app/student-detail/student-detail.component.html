@@ -1,0 +1,17 @@
+<div class="student-div">
+    <div class="detail-row">
+        <div class="id">ID</div>
+        <div class="fName">First Name</div>
+        <div class="lName">Last Name</div>
+        <div class="contact">Contact</div>
+        <div class="address">Address</div>
+        <div class="dept">Department</div>
+        <div class="action">Actions</div>
+    </div>
+    <hr>
+    <div class="main-div" *ngFor="let student of students">
+        <app-detail-row [student]="student"></app-detail-row>
+
+    </div>
+    
+</div>

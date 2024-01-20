@@ -1,0 +1,32 @@
+<div class="add-student">
+  <button (click)="onClick()" class="btn">Add Student</button>
+</div>
+<div *ngIf="add" class="form-div">
+  <form action="" class="form-control">
+    <div>
+      <label for="id">Id:</label>
+      <input type="text" name="id" id="id" placeholder="Enter id: " />
+    </div>
+    <div>
+      <label for="fName">First Name:</label>
+      <input type="text" name="fName" id="fName" placeholder="Enter First Name: " />
+    </div>
+    <div>
+      <label for="lName">Last Name:</label>
+      <input type="text" name="lName" id="lName" placeholder="Enter Last Name: " />
+    </div>
+    <div>
+      <label for="contact">Contact:</label>
+      <input type="text" name="contact" id="contact" placeholder="Enter contact: " />
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" name="address" id="address" placeholder="Enter Address: " />
+    </div>
+    <div>
+      <label for="dept">Department:</label>
+      <input type="text" name="dept" id="dept" placeholder="Enter Department: " />
+    </div>
+    <input type="submit">
+  </form>
+</div>

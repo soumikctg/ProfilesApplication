@@ -1,0 +1,53 @@
+.add-student {
+    display: grid;
+    justify-content: end;
+    margin-right: 3.5em;
+}
+
+.btn {
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(77, 26, 170);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(117, 68, 208);
+}
+
+.form-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0.1rem 3.5rem;
+    
+}
+
+.form-control {
+    justify-content: center;
+    margin: 20px;
+    background-color: rgb(241, 249, 251);
+    margin: 0.8rem;
+    border-radius: 7px;
+    box-shadow: 4px 4px 2px rgb(133, 131, 131);
+    padding: 1em;
+}
+
+.form-control label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-control input {
+    width: 95%;
+    height: 2em;
+    padding: 3px 7px;
+    font-size: 17px;
+    margin-bottom: 0.8rem;
+    display: block;
+}

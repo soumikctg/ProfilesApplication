@@ -1,0 +1,16 @@
+.navbar{
+    background-color: rgb(71, 6, 201);
+    color: white;
+    min-height: 3rem;
+    display: grid;
+    align-content: center;
+}
+.brand{
+    margin-left: 0.8em;
+    font-size: 1.5rem;
+    font-weight: 5s00;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
