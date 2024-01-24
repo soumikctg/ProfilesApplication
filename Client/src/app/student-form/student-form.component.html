@@ -1,0 +1,27 @@
+<form class="row g-3 justify-content-end" [formGroup]="profileForm" (submit)="addStudent()">
+  <div class="col-md-6">
+    <label class="form-label" for="fName">First Name:</label>
+    <input class="form-control" type="text" name="fName" id="fName" placeholder="Enter First Name: " formControlName="FirstName" />
+  </div>
+  <div class="col-md-6">
+    <label class="form-label" for="lName">Last Name:</label>
+    <input class="form-control" type="text" name="lName" id="lName" placeholder="Enter Last Name: " formControlName="LastName"/>
+  </div>
+  <div class="col=md-12">
+    <label class="form-label" for="address">Address:</label>
+    <input class="form-control" type="text" name="address" id="address" placeholder="Enter Address: " formControlName="Address"/>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label" for="contact">Contact:</label>
+    <input class="form-control" type="text" name="contact" id="contact" placeholder="Enter contact: " formControlName="Contact"/>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label" for="dept">Department:</label>
+    <input class="form-control" type="text" name="dept" id="dept" placeholder="Enter Department: " formControlName="Department"/>
+  </div>
+  <div class="col-auto " >
+    <button [disabled]="!profileForm.valid" class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</form>
+
+

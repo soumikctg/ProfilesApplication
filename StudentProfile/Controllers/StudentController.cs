@@ -6,12 +6,9 @@ namespace ProfilesApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StudentController : ControllerBase
+    public class StudentController(StudentService studentService) : ControllerBase
     {
-        private readonly StudentService _studentService;
-        public StudentController(StudentService studentService) => _studentService = studentService;
-
-
+        private readonly StudentService _studentService = studentService;
 
         [HttpPost("AddStudent")]
         public async Task<IActionResult> AddStudent(Student newStudent)
@@ -26,6 +23,17 @@ namespace ProfilesApi.Controllers
             await _studentService.CreateManyAsync(newStudents);
             return CreatedAtAction(nameof(AddStudents), newStudents);
         }
+
+        [HttpPost("ImportStudents")]
+        public async Task<IActionResult> ImportStudents([FromBody] List<Student> students)
+        {
+
+
+            await _studentService.CreateManyAsync(students);
+
+            return Ok("Students Imported Successfully");
+        }
+        
 
         [HttpGet("GetStudents")]
         public async Task<IActionResult> GetStudents()
@@ -67,7 +75,7 @@ namespace ProfilesApi.Controllers
         }
 
         [HttpPatch("UpdateContact_&_Address")]
-        public async Task<IActionResult> PartialUpdate(string id, [FromBody] StudentDto dtoStudent)
+        public async Task<IActionResult> PartialUpdate(string id, [FromBody] Dto dtoStudent)
         {
             var student = await _studentService.GetAsyncById(id);
             if (student is null)

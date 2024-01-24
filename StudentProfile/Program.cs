@@ -1,11 +1,14 @@
 using ProfilesApi.Models;
 using ProfilesApi.Services;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.HttpsPolicy;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("MongoDbSettings"));
 builder.Services.AddSingleton<StudentService>();
+builder.Services.AddSingleton<TeacherService>();
 
 // Add services to the container.
 
@@ -13,6 +16,7 @@ builder.Services.AddControllers().AddJsonOptions(options => options.JsonSerializ
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 
 
@@ -27,10 +31,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors(options => options.AllowAnyOrigin()
+           .AllowAnyMethod()
+           .AllowAnyHeader());
+
 app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseCors(option => option.AllowAnyOrigin());
+
 
 app.Run();

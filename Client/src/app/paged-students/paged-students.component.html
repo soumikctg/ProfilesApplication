@@ -1,0 +1,27 @@
+<div class="container contain">
+    <div class="pagination mb-5">
+        <label class="form-label me-2" for="pageSize">Page Size: </label>
+        <input class="form-control me-5" type="number" id="pageSize" [(ngModel)]="pageSize" min="1">
+
+        <label class="form-label me-2" for="page">Page No: </label>
+        <input class="form-control me-5" type="number" id="page" [(ngModel)]="page" min="1">
+
+        <button type="button" (click)="getPagedStudents()" class="btn btn-lg btn-secondary">GetStudents</button>
+    </div>
+</div>
+<div class="student-div" *ngIf="students">
+    <div class="detail-row">
+        <div class="id">ID</div>
+        <div class="fName">First Name</div>
+        <div class="lName">Last Name</div>
+        <div class="contact">Contact</div>
+        <div class="address">Address</div>
+        <div class="dept">Department</div>
+        <div class="action">Actions</div>
+    </div>
+    <hr>
+    <div class="main-div" *ngFor="let student of students">
+        <app-detail-row [student]="student"></app-detail-row>
+    </div>
+</div>
+

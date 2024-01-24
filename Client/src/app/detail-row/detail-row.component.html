@@ -10,7 +10,18 @@
     
 </div>
 <div *ngIf="action" class="action-btn">
-    <div class="bt1"><button class="btn">Update</button></div>
-    <div class="bt2"><button class="btn">Partial update</button></div>
-    <div class="bt3"><button style="background-color: rgb(151, 9, 9);" class="btn ">Delete</button></div>
+    <div class="bt1"><button type="button" (click)="updateProfile()" class="btn">Update</button></div>
+    <div class="bt2"><button type="button" (click)="partialUpdateProfile()" class="btn">Partial update</button></div>
+    
+    <div class="bt3"><button type="button" (click)="deleteStudent()" style="background-color: rgb(151, 9, 9);" class="btn ">Delete</button></div>
+    
 </div>
+<div *ngIf="partial">
+    <app-partial-update [student]="student"></app-partial-update>
+</div>
+<div *ngIf="update">
+    <app-update-profile [student]="student"></app-update-profile>
+</div>
+
+
+

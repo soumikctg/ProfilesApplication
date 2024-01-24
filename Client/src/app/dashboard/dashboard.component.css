@@ -5,3 +5,105 @@
     text-align: center;
     min-width: 100%;
 }
+
+.add-student {
+    display: grid;
+    justify-content: center;
+}
+
+.btn1 {
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(77, 26, 170);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn1:hover {
+    background-color: rgb(117, 68, 208);
+}
+
+.btn2 {
+    margin-top: 1em;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(171, 5, 5);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn2:hover {
+    background-color: rgb(208, 68, 68);
+}
+
+
+
+.form-div{
+  background-color: #f3f2e2;
+  margin: 1em 5em;
+  padding: 2em;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.add-div{
+  display: grid;
+  justify-content: end;
+  margin-right: 1em;
+}
+
+
+.contain{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin: 2rem 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.student-div{
+    padding: 0.5rem;
+    background-color: rgb(241, 249, 251);
+    margin: 0.8rem;
+    border-radius: 7px;
+    box-shadow: 4px 4px 2px rgb(133, 131, 131);
+    display: inline-block;
+}
+
+.detail-row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items:  center;
+    margin-top: 0.5em;
+    padding: 1em;
+}
+
+.id{
+    grid-column: 1/span 3;
+}
+.fName{
+    grid-column: 4/span 1;
+}
+.lName{
+    grid-column: 5/span 1;
+}
+.contact{
+    grid-column: 6/ span 2;
+}
+.address{
+    grid-column: 8/ span 2;
+}
+
+.dept{
+    grid-column: 10/ span 2;
+}
+.action{
+    grid-column: 12/ span 1;
+}

@@ -1,0 +1,30 @@
+<form class="row g-3 justify-content-end" [formGroup]="profileForm" (ngSubmit)="updateStudent()">
+    <div class="col-md-12">
+        <label class="form-label" for="id">Id:</label>
+        <input  formControlName="Id" class="form-control" type="text" name="id" id="id" placeholder="Enter your ID: " readonly/>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="fName">First Name:</label>
+        <input formControlName="FirstName" class="form-control" type="text" name="fName" id="fName" placeholder="Enter First Name: "/>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="lName">Last Name:</label>
+        <input formControlName="LastName" class="form-control" type="text" name="lName" id="lName" placeholder="Enter Last Name: "/>
+    </div>
+    <div class="col=md-12">
+        <label class="form-label" for="address">Address:</label>
+        <input formControlName="Address" class="form-control" type="text" name="address" id="address" placeholder="Enter Address: " >
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="contact">Contact:</label>
+        <input formControlName="Contact" class="form-control" type="text" name="contact" id="contact" placeholder="Enter contact: " />
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="dept">Department:</label>
+        <input formControlName="Department" class="form-control" type="text" name="dept" id="dept" placeholder="Enter Department: "/>
+    </div>
+    <div class="col-auto " >
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+  

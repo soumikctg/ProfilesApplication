@@ -1,0 +1,37 @@
+[
+  {
+    "FirstName": "Emma",
+    "LastName": "Hamilton",
+    "Contact": "3333333333",
+    "Address": "210 Oak Ln",
+    "Department": "History"
+  },
+  {
+    "FirstName": "Noah",
+    "LastName": "Gomez",
+    "Contact": "3434343434",
+    "Address": "543 Maple Blvd",
+    "Department": "Physics"
+  },
+  {
+    "FirstName": "Olivia",
+    "LastName": "Floyd",
+    "Contact": "3535353535",
+    "Address": "765 Pinecone Dr",
+    "Department": "Chemistry"
+  },
+  {
+    "FirstName": "Jackson",
+    "LastName": "Bryant",
+    "Contact": "3636363636",
+    "Address": "876 Cedar Ln",
+    "Department": "Geography"
+  },
+  {
+    "FirstName": "Ava",
+    "LastName": "Barnes",
+    "Contact": "3737373737",
+    "Address": "987 Willow Ave",
+    "Department": "English"
+  }
+]

@@ -1,5 +1,5 @@
 export interface StudentDetail {
-    Id: string;
+    Id: string | null;
     FirstName: string;
     LastName:string;
     Contact:string;

@@ -6,13 +6,14 @@ import { heroPencilSquare} from '@ng-icons/heroicons/outline';
 import { DetailRowComponent } from "../detail-row/detail-row.component";
 import { StudentServiceService } from '../student-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { PartialUpdateComponent } from "../partial-update/partial-update.component";
 
 @Component({
     selector: 'app-student-detail',
     standalone: true,
     templateUrl: './student-detail.component.html',
     styleUrl: './student-detail.component.css',
-    imports: [CommonModule, NgIconComponent, DetailRowComponent, HttpClientModule]
+    imports: [CommonModule, NgIconComponent, DetailRowComponent, HttpClientModule, PartialUpdateComponent]
 })
 export class StudentDetailComponent {
   edit = heroPencilSquare;
@@ -24,6 +25,7 @@ export class StudentDetailComponent {
     this.action=!this.action;
   }
 
+
   students: StudentDetail[] =[];
 
   constructor(private httpService: StudentServiceService){
@@ -31,5 +33,5 @@ export class StudentDetailComponent {
       this.students=result;
     })
   }
-  
+
 }

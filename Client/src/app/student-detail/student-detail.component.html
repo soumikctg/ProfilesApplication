@@ -1,4 +1,4 @@
-<div class="student-div">
+<div class="student-div container">
     <div class="detail-row">
         <div class="id">ID</div>
         <div class="fName">First Name</div>
@@ -11,7 +11,6 @@
     <hr>
     <div class="main-div" *ngFor="let student of students">
         <app-detail-row [student]="student"></app-detail-row>
-
     </div>
     
 </div>
